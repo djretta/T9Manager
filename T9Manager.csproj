@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageIcon>t9.png</PackageIcon>
+    <ApplicationIcon>Resources\t9.ico</ApplicationIcon>
+    <BaseOutputPath>C:\Users\ROG G752V\Desktop\Build T9Manager</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Convertio PNG to ICO Converter.url" />
+    <None Remove="Resources\t9 offline.psd" />
+    <None Remove="Resources\t9 online.psd" />
+    <None Remove="Resources\t9-offline.ico" />
+    <None Remove="Resources\t9-offline.png" />
+    <None Remove="Resources\t9-online.ico" />
+    <None Remove="Resources\t9-online.png" />
+    <None Remove="Resources\t9-source.ico" />
+    <None Remove="Resources\t9-source.png" />
+    <None Remove="Resources\t9.ico" />
+    <None Remove="Resources\t9.png" />
+    <None Remove="Resources\t9.psd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Convertio PNG to ICO Converter.url" />
+    <Resource Include="Resources\t9-offline.ico" />
+    <Resource Include="Resources\t9-offline.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerShell.SDK" Version="7.2.3" />
+    <PackageReference Include="System.Management.Automation" Version="7.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\t9-online.ico" />
+    <Resource Include="Resources\t9-online.png" />
+    <Resource Include="Resources\t9-source.ico" />
+    <Resource Include="Resources\t9-source.png" />
+    <Resource Include="Resources\t9.ico" />
+    <Resource Include="Resources\t9.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Resource>
+    <Resource Include="Resources\t9.psd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
