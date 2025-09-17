@@ -1,8 +1,13 @@
-﻿2022.04.28 Franklin T9 Manager - controls a Franklin T9 (r717) Hotspot device over SSH via plink.exe and PowerShell
+﻿2022.04.28 Franklin T9 Manager - controls a Franklin T9 (r717) Hotspot device over SSH via plink.exe and ICMP commands
 
 Made using Visual Studio 2022 (64 Bit) Community Edition, written in C#
 
-Publish settings: Release-anycpu, Framework-dependent, net6.0-windows, Portable
+Run:
+1) Download .NET Desktop Runtime 6.0.36: https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+
+Build:
+1) Download .NET SDK 6.0.428: dotnet.microsoft.com/en-us/download/dotnet/6.0
+2) Run in administrator shell in project directory: dotnet publish -c Release -r win-x64 --self-contained false
 
 Detailed documentation on the Franklin T9 (r717) 4G Hotspot https://docs.google.com/document/d/1LgYLB0sJbwAMW2VfcNoGavIJQhiYCJzsWK4onOFdSys/edit
 
