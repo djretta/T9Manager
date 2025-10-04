@@ -2,7 +2,7 @@ Franklin T9 Manager - controls a Franklin T9 (r717) Hotspot device over SSH via 
 
 Made using Visual Studio, written in C#
 
-<img width="392" height="262" alt="image" src="https://github.com/user-attachments/assets/eb9cc602-9c6c-4ba5-a0c0-4ede45db8604" />
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/eb9cc602-9c6c-4ba5-a0c0-4ede45db8604" />
 
 Run:
 1) Download .NET Desktop Runtime 6.0.36: https://dotnet.microsoft.com/en-us/download/dotnet/6.0
