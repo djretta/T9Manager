@@ -4,13 +4,6 @@ Made using Visual Studio, written in C#
 
 <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/eb9cc602-9c6c-4ba5-a0c0-4ede45db8604" />
 
-Run:
-1) Download .NET Desktop Runtime 6.0.36: https://dotnet.microsoft.com/en-us/download/dotnet/6.0
-
-Build:
-1) Download .NET SDK 6.0.428: dotnet.microsoft.com/en-us/download/dotnet/6.0
-2) Run in administrator shell in project directory: dotnet publish -c Release -r win-x64 --self-contained false
-
 Detailed technical documentation on the Franklin T9 (r717) 4G Hotspot available at https://docs.google.com/document/d/1LgYLB0sJbwAMW2VfcNoGavIJQhiYCJzsWK4onOFdSys/edit
 
 Features include:
@@ -23,7 +16,16 @@ Features include:
 
 - link to comprehensive set up document I'm working on
 
-Future features:
+Dependencies required to run:
+1) Download .NET Desktop Runtime 6.0.36: https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+
+Build process:
+1) Download .NET SDK 6.0.428: dotnet.microsoft.com/en-us/download/dotnet/6.0
+2) Run in administrator shell in project directory: dotnet publish -c Release -r win-x64 --self-contained false
+
+See file MyCustomApplicationContext.cs for majority of functionality.
+
+Potential Future features:
 
 - connection (band and signal strength) and data usage info on a hover bubble popup
 
@@ -32,6 +34,3 @@ Future features:
 - automated setup (e.g. disabling automatic update, sim unlocking, installing TTL modifier script)
 
 - changing default passwords for hidden pages, wifi network
-
-See file MyCustomApplicationContext.cs for majority of functaionality.
-
