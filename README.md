@@ -10,8 +10,6 @@ This application was written to remotely confirm online status/connectivity for 
 
 Detailed technical documentation on the Franklin T9 (r717) 4G Hotspot available at https://docs.google.com/document/d/1LgYLB0sJbwAMW2VfcNoGavIJQhiYCJzsWK4onOFdSys/edit
 
-See file MyCustomApplicationContext.cs for majority of functionality.
-
 Features:
 
 - network accessibility status in the form of a visual icon (green == online, red == offline)
@@ -29,6 +27,8 @@ Dependencies required to run:
 Build process:
 1) Download .NET SDK 6.0.428: dotnet.microsoft.com/en-us/download/dotnet/6.0
 2) Run in administrator shell in project directory: dotnet publish -c Release -r win-x64 --self-contained false
+
+See file MyCustomApplicationContext.cs for majority of functionality.
 
 Potential Future Features:
 
